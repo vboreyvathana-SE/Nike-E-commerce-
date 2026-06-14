@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    <link rel="icon" href="img/nike-logo-4.webp">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="Nike.css">
+    <style>
+        body {
+            animation: fadeUp 0.75s ease both;
+        }
+
+        .complete img {
+            aspect-ratio: 1/2;
+            object-fit: cover;
+        }
+
+        img {
+            transition: 0.5s;
+        }
+
+        img:hover {
+            transform: translatey(-5px);
+        }
+
+        .btn-1 {
+            background-color: white;
+            border: none;
+            padding: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            transition: 0.5s;
+        }
+
+        .btn-1:hover {
+            color: red;
+        }
+
+        .btn-2 {
+
+            border-radius: 35px;
+            transition: 0.5s;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .btn-2:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(128, 255, 0);
+        }
+
+        .container-1 {
+            padding-left: 20px;
+            padding-right: 20px;
+            margin: auto;
+
+            width: 100%;
+        }
+
+        .container {
+
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto
+        }
+
+        @media (min-width:576px) {
+            .container-1 {
+                max-width: 540px
+            }
+        }
+
+        @media (min-width:768px) {
+            .container-1 {
+                max-width: 720px
+            }
+        }
+
+        @media (min-width:992px) {
+            .container-1 {
+                max-width: 960px
+            }
+        }
+
+        @media (min-width:1200px) {
+            .container-1 {
+                max-width: 1280px
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light header">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <h1 class="m-0">Nike</h1>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+                <div class="navbar-nav mx-auto">
+                    <a class="nav-link" href="new&featured-section.html">NEW & FEATURED</a>
+                    <a class="nav-link" href="men-section.html">MEN</a>
+                    <a class="nav-link" href="women.html">WOMEN</a>
+                    <a class="nav-link" href="kid.html">KIDS</a>
+                    <a class="nav-link" href="sale.html">SALE</a>
+                </div>
+
+                <div class="d-flex gap-3 icon">
+                    <a href="fav.html" class="text-dark">
+                        <i class="fas fa-heart"></i>
+                    </a>
+
+                    <a href="bag1.html" class="text-dark">
+                        <i class="fas fa-shopping-bag"></i>
+                    </a>
+
+                    <a href="profile.html" class="text-dark">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="footwear-header" style="background-color: rgb(255, 255, 255); padding-bottom: 0px;">
+        <h1 class="footwear-title" style="font-size: 120px;">BAG</h1>
+        <div class="footwear-meta">
+            <span class="results-count">ITEM IN BAG FOUND</span>
+            <div class="divider-line"></div>
+
+        </div>
+    </div>
+    <div>
+        <div class="container-1" style="color: white;">
+            <div class=" row  w-100 ">
+
+                <div class="col-lg-6 col-md-6 col-sm-12 pt-5 pr-5 py-5  bg-white" style="border-radius: 10px;">
+                    <div class="p-3"
+                        style="background-color: rgba(243, 240, 240, 0.781); border-left:solid 4px; color: black;">
+                        <p>
+                            <b>Free Shipping for Members.</b> <br>
+                            Become a Nike Member for fast and free shipping.
+                            Join us or Sign-in
+                        </p>
+                    </div>
+                    <div class="row  m-0  py-4 " style="border-bottom: solid rgb(240, 240, 240) 2px;">
+                        <div class="col-lg-6 col-md-12  col-sm-12  w-100">
+                            <img src="img/ea41590f156f3212b79e0dfce26c7861.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12  ">
+                            <div class="d-flex">
+                                <div class="col-9 text-left" style="font-style:  oblique;">
+                                    <h4><B>NIKE AIR MAX DN</B></h4>
+                                    <p style="color: grey">Lifestyle Shoes</p>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h5>400.00$</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex" style="color: grey ;font-size: small;">
+                                <div class="col-6 text-left">
+                                    SIZE
+                                </div>
+                                <div class="col-6 ">
+                                    QUANTITY
+                                </div>
+                            </div>
+                            <div class="d-flex" style="color: rgb(0, 0, 0) ;font-size: x-large;">
+                                <div class="col-6 text-left">
+                                    <b> 10.5</b>
+                                </div>
+                                <div class="col-6 ">
+                                    <b>1</b>
+                                </div>
+                            </div>
+                            <div class=" d-flex ">
+                                <div class="col-6">
+                                    <button class="btn-1"><i class="fa-solid fa-heart"> </i> FAVORITES</button>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn-1"><i class="fa-solid fa-trash"> </i> REMOVE</button>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row  m-0 py-4" style="border-bottom: solid rgb(240, 240, 240) 2px;">
+                        <div class="col-lg-6 col-md-12  col-sm-12  w-100">
+                            <img src="img/ea41590f156f3212b79e0dfce26c7861.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12  ">
+                            <div class="d-flex">
+                                <div class="col-9 text-left" style="font-style:  oblique;">
+                                    <h4><B>NIKE AIR MAX DN</B></h4>
+                                    <p style="color: grey">Lifestyle Shoes</p>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h5>599.00$</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex" style="color: grey ;font-size: small;">
+                                <div class="col-6 text-left">
+                                    SIZE
+                                </div>
+                                <div class="col-6 ">
+                                    QUANTITY
+                                </div>
+                            </div>
+                            <div class="d-flex" style="color: rgb(0, 0, 0) ;font-size: x-large;">
+                                <div class="col-6 text-left">
+                                    <b> 10.5</b>
+                                </div>
+                                <div class="col-6 ">
+                                    <b>1</b>
+                                </div>
+                            </div>
+                            <div class=" d-flex ">
+                                <div class="col-6">
+                                    <button class="btn-1"><i class="fa-solid fa-heart"> </i> FAVORITES</button>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn-1"><i class="fa-solid fa-trash"> </i> REMOVE</button>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 border p-5 "
+                    style="border-radius: 10px; background-color: black; color: white;">
+
+                    <div class=" "
+                        style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                        <span>
+                            <H1>SUMMARY</H1>
+                        </span>
+                    </div>
+                    <div class=" d-flex py-4" style="border-bottom: solid rgb(204, 204, 204) 1px; padding: 10px;">
+                        <div class="col-9 pl-0" style="color: grey;"> SUBTOTAL</div>
+                        <div class="col-3 pr-0" style="text-align: right; color: white;"><b>999.00$</b></div>
+
+
+                    </div>
+                    <div class=" d-flex py-4" style="border-bottom: solid rgb(204, 204, 204) 1px; padding: 10px;">
+                        <div class="col-9 pl-0" style="color: grey;"> ESTIMATED SHIPPING & HANDLING</div>
+                        <div class="col-3 pr-0" style="text-align: right; color: white;"><b>$0.00</b></div>
+
+
+                    </div>
+                    <div class=" d-flex py-4" style="border-bottom: solid rgb(204, 204, 204) 1px; padding: 10px;">
+                        <div class="col-9 pl-0" style="color: grey;"> SUBTOTAL</div>
+                        <div class="col-3 pr-0" style="text-align: right; color: white;"><b>____</b></div>
+                    </div>
+                    <div class=" d-flex py-5 ">
+                        <div class=" w-100 py-3">
+                            <h4>TOTAL :</h4>
+                        </div>
+                        <div class=" w-100">
+                            <h1>999.00$</h1>
+                        </div>
+                    </div>
+
+                    <div style="padding-top: 70px;">
+                        <div class="py-3 "><button class="btn-2 w-100 py-3"> MEMBER CHECKOUT </button></div>
+                        <div><button
+                                style="border-radius: 35px;  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"
+                                class="btn btn-outline-light w-100 py-3"> GUEST CHECKOUT </button></div>
+                        <div class="text-center py-2 " style="color: grey;">PAY WITH PAYPAL</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: black; color: white; padding-top: 70px;">
+        <div class="container-1">
+            <div class="col-lg-12">
+                <h1 style="font-style: oblique; font-size: 100px; text-align: right;"><b>COMPLETE YOUR LOOK</b></h1>
+            </div>
+            <div class=" row complete">
+                <div class="col-lg-4 col-sm-12 py-3 " style="font-style: oblique;">
+
+                    <img class="shoes-img" src="img/nike air force 1.png" alt="">
+                    <span style="color: grey; padding-left: 15px;">Lifestyle</span>
+                    <div class="d-flex">
+                        <div class="col-8">
+                            <b>NIKE AIR FORCE 1</b>
+                        </div>
+                        <div class="col-4 text-right ">
+                            <b>99.99$</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 py-3" style="font-style: oblique;">
+
+                    <img class="shoes-img" src="img/nike tech flees.png" alt="">
+                    <span style="color: grey; padding-left: 15px;">Lifestyle</span>
+                    <div class="d-flex">
+                        <div class="col-8">
+                            <b>NIKE TECH FLEES</b>
+                        </div>
+                        <div class="col-4 text-right ">
+                            <b>99.99$</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 py-3" style="font-style: oblique;">
+
+                    <img class="shoes-img" src="img/slipper.jpg" alt="">
+                    <span style="color: grey; padding-left: 15px;">Lifestyle</span>
+                    <div class="d-flex">
+                        <div class="col-8">
+                            <b>NIKE VITORI ONE slipper</b>
+                        </div>
+                        <div class="col-4 text-right ">
+                            <b>99.99$</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer style="background-color: black; border-top: solid 1px;">
+            <div class=" row w-100  ">
+                <div class=" col-lg-4 col-sm-12 ">
+                    <h3>About Nike</h3>
+                    <p>
+                        Our Mission
+                        Sustainability
+                        Careers
+                        Investors
+                        News & Press
+                    </p>
+                </div>
+                <div class=" col-lg-4 col-sm-12">
+                    <h3>Contact</h3>
+                    <P>
+                        Customer Service: 1-800-806-6453 <br>
+                        Email: nike@support.com <br>
+                        Live Chat (Mon-Fri 9am-6pm) <br>
+                        Store Locator <br>
+                        Returns & Exchanges <br>
+                    </P>
+                </div>
+                <div class=" col-lg-4 col-sm-12">
+                    <h3>Services</h3>
+                    <P>
+                        Nike Membership
+                        Nike App
+                        Nike Training Club
+                        Nike Run Club
+                        Gift Cards
+                        Student Discount
+                    </P>
+                </div>
+            </div>
+        </footer>
+
+        <div class="social-media-icon " style="background-color: black;">
+            <a href="https://www.facebook.com/nike" target="_blank">
+                <img src="img/facebook.jpg" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/nike" target="_blank">
+                <img src="img/insta.jpg" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com/nike" target="_blank">
+                <img src="img/x.jpg" alt="Twitter">
+            </a>
+            <a href="https://www.youtube.com/nike" target="_blank">
+                <img src="img/youtube.jpg" alt="YouTube">
+            </a>
+            <a href="https://www.tiktok.com/@nike" target="_blank">
+                <img src="img/tiktok.jpg" alt="TikTok">
+            </a>
+        </div>
+</body>
+
+</html>
