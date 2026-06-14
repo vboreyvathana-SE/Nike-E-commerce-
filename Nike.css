@@ -590,6 +590,7 @@ footer p {
 }
 
 .category {
+    color: var(--dark);
     position: sticky;
     top: 94px;
     padding: 1.25rem 1.25rem 1.5rem;
