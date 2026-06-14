@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Nike.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Space+Grotesk:wght@300..700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <style>
+        .sort-by-1 {
+            font-size: clamp(0.75rem, 1.7vw, 1rem);
+            font-weight: 800;
+            white-space: nowrap;
+            letter-spacing: 0.05em;
+        }
+
+        .sort-by-1 {
+
+
+            gap: 0.25rem;
+            cursor: pointer;
+        }
+
+        .welcome {
+            font-size: 30px;
+            position: relative;
+            margin-top: 15px;
+            left: 85%;
+            color: rgb(170, 28, 71);
+
+
+        }
+
+        .product {
+            list-style-type: none;
+            transition: 0.5s;
+            overflow: visible;
+
+
+        }
+
+        .btn1 {
+
+            opacity: 1;
+            transition: 0.5s;
+            overflow: hidden;
+            background-color: black;
+            color: aliceblue;
+            display: inline-block;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+
+            position: relative;
+
+
+        }
+
+        .btn2 {
+
+            opacity: 0;
+            transition: 0.5s;
+            overflow: hidden;
+            background-color: white;
+
+            color: rgb(0, 0, 0);
+            display: inline-block;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border: 1px solid black;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-top: 40px;
+            position: relative;
+            border-radius: 10px;
+
+
+        }
+
+        .btn2:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .product:hover .btn1 {
+            opacity: 1;
+            transform: translate(0%, -100%);
+            display: block;
+
+        }
+
+        .product:hover .btn2 {
+            opacity: 1;
+            transform: translate(0%, 100%);
+            display: block;
+
+        }
+
+
+        img {
+
+            width: 100%;
+        }
+
+        .detail_product {
+            margin-top: -40px;
+            background-color: white;
+            position: relative;
+            font-size: x-large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .detail_recent {
+            margin-top: -80px;
+            background-color: white;
+            position: relative;
+            font-size: x-large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           
+
+        }
+
+
+        .carousel-project {
+            overflow-x: auto;
+            gap: 1em;
+            margin: 20px auto;
+            padding-bottom: 15px;
+
+        }
+
+        .carousel-project:hover .carousel-group {
+            animation-play-state: paused;
+        }
+
+        .carousel-project::-webkit-scrollbar {
+            display: none;
+            display: block;
+        }
+
+        .carousel-group {
+            display: flex;
+            animation: scroll 15s linear infinite;
+            gap: 2em;
+        }
+
+        .pro-item {
+            flex: 0 0 15em;
+            align-items: center;
+            gap: 2em;
+            padding: 1em;
+
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div class="brand-name" id="brand-name">
+            <a style="text-decoration: none;" href="landing-page.html">
+                <h1 style="color: black;">Nike</h1>
+            </a>
+        </div>
+        <div class="nav-bar" id="nav-bar">
+            <a href="new&featured-section.html">NEW & FEATURED</a>
+            <a href="men-section.html">MEN</a>
+            <a href="women.html">WOMEN</a>
+            <a href="kid.html">KIDS</a>
+            <a href="sale.html">SALE</a>
+        </div>
+        <div class="icon" id="icon">
+            <img src="img/heart.png" alt="">
+            <img src="img/shopping-bag.png" alt="">
+        </div>
+    </div>
+
+    <div class="footwear-header" style="background-color: white;">
+        <h1 class="footwear-title ">FAVORITES</h1>
+
+        <div class="footwear-meta">
+            <div class="row">
+                <div class=" col-6 results-count">4 ITEMS</div>
+
+                <div class=" col-6 sort-by-1 ">
+                    <p style="text-align: right;">EDIT</p>
+                </div>
+            </div>
+        </div>
+        <div class="divider-line"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12  relative product ">
+
+                <div>
+                    <i class="fa-solid fa-heart welcome footer"></i>
+                    <img style="margin-top: -40px ; " src="img/red.png" alt="">
+                </div>
+                <button class="btn1 w-100 "><b>ADD TO BAG</b></button>
+                <div class="col-12 d-flex w-100">
+                    <div class="col-9 detail_product " style="padding-right:40 px;">
+                        <B>KINETIC AIR MAX</B>
+                        <P style="font-size: small;"> MEN'S RUNNING SHOES</P>
+                    </div>
+                    <div class="col-3 detail_product" style="font-size: medium;text-align: right; padding-top: 8px;">
+                        160$
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12  relative product ">
+
+                <div>
+                    <i class="fa-solid fa-heart welcome footer"></i>
+                    <img style="margin-top: -40px ; " src="img/green.png" alt="">
+                </div>
+                <button class="btn1 w-100 "><b>ADD TO BAG</b></button>
+                <div class="col-12 d-flex w-100">
+                    <div class="col-9 detail_product " style="padding-right:40 px;">
+                        <B>VAPORFLY 3 TECH</B>
+                        <P style="font-size: small;"> ELITE ROAD RACING</P>
+                    </div>
+                    <div class="col-3 detail_product" style="font-size: medium;text-align: right; padding-top: 8px;">
+                        250$
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12  relative product ">
+
+                <div>
+                    <i class="fa-solid fa-heart welcome footer"></i>
+                    <img style="margin-top: -40px ; " src="img/black.png" alt="">
+                </div>
+                <button class="btn1 w-100 "><b>ADD TO BAG</b></button>
+                <div class="col-12 d-flex w-100">
+                    <div class="col-9 detail_product " style="padding-right:40 px;">
+                        <B>APEX DUNK LOW</B>
+                        <P style="font-size: small;"> LIFESTYLE SNEAKERS</P>
+                    </div>
+                    <div class="col-3 detail_product" style="font-size: medium;text-align: right; padding-top: 8px;">
+                        115$
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12  relative product ">
+
+                <div>
+                    <i class="fa-solid fa-heart welcome footer"></i>
+                    <img style="margin-top: -40px ; " src="img/white.png" alt="">
+                </div>
+                <button class="btn1 w-100 "><b>ADD TO BAG</b></button>
+                <div class="col-12 d-flex w-100">
+                    <div class="col-9 detail_product " style="padding-right:40 px;">
+                        <B>CORE HERITAGE XL</B>
+                        <P style="font-size: small;"> EVERYDAY PERFORMANCE</P>
+                    </div>
+                    <div class="col-3 detail_product" style="font-size: medium;text-align: right; padding-top: 8px;">
+                        160$
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="footwear-header" style="background-color: white;">
+        <h1 class="footwear-title ">RECENTLY VIEW</h1>
+        <div class="divider-line"></div>
+    </div>
+    <div class="container">
+        <div class="carousel-project row  d-flex">
+            <div class=" col-12 d-flex ">
+                <div class="carousel-group">
+                    <div class="col-6 pro-item product ">
+                        <div>
+                            <img src="img/red.png" alt="">
+                        </div>
+                        <button class="btn2 w-100 "><b>ADD TO BAG</b></button>
+                        <div class="col-12 d-flex w-100" style="text-align: center;">
+                            <div class="col-12 detail_recent  " style="align-items: center;">
+                                <B>KINETIC AIR MAX</B>
+                                <div class="d-flex  " style="font-size: small;">
+                                    <P style="margin-top: 7px;"> MEN'S RUNNING SHOES </P>
+                                    <p style="margin-top: 7px;" class=" mx-3  "><b>168$</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 pro-item product ">
+                        <div>
+                            <img src="img/green.png" alt="">
+                        </div>
+                        <button class="btn2 w-100 "><b>ADD TO BAG</b></button>
+                        <div class="col-12 d-flex w-100" style="text-align: center;">
+                            <div class="col-12 detail_recent  " style="align-items: center;">
+                                <B>VAPORFLY 3 TECH</B>
+                                <div class="d-flex  " style="font-size: small;">
+                                    <P style="margin-top: 7px;">ELITE ROAD RACING</P>
+                                    <p style="margin-top: 7px;" class=" mx-3  "><b>250$</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 pro-item product ">
+                        <div>
+                            <img src="img/black.png" alt="">
+                        </div>
+                        <button class="btn2 w-100 "><b>ADD TO BAG</b></button>
+                        <div class="col-12 d-flex w-100" style="text-align: center;">
+                            <div class="col-12 detail_recent  " style="align-items: center;">
+                                <B>APEX DUNK LOW </B>
+                                <div class="d-flex  " style="font-size: small;">
+                                    <P style="margin-top: 7px;">LIFESTYLE SNEAKERS</P>
+                                    <p style="margin-top: 7px;" class=" mx-3  "><b>115$</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 pro-item product ">
+                        <div>
+                            <img src="img/white.png" alt="">
+                        </div>
+                        <button class="btn2 w-100 "><b>ADD TO BAG</b></button>
+                        <div class="col-12 d-flex w-100" style="text-align: center;">
+                            <div class="col-12 detail_recent  " style="align-items: center;">
+                                <B style="font-size: 22px;">CORE HERITAGE XL</B>
+                                <div class="d-flex  " style="font-size: small;">
+                                    <P style="margin-top: 7px;font-size: smaller">EVERYDAY PERFORMANCE</P>
+                                    <p style="margin-top: 7px;" class=" mx-3  "><b>115$</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 pro-item product ">
+                        <div>
+                            <img src="img/Dunk low.png" alt="">
+                        </div>
+                        <button class="btn2 w-100 "><b>ADD TO BAG</b></button>
+                        <div class="col-12 d-flex w-100" style="text-align: center;">
+                            <div class="col-12 detail_recent  " style="align-items: center;">
+                                <B>NIKE DUNK LOW </B>
+                                <div class="d-flex  " style="font-size: small;">
+                                    <P style="margin-top: 7px;">LIFESTYLE SHOES</P>
+                                    <p style="margin-top: 7px;" class=" mx-4 "><b>99.99$</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 pro-item product ">
+                        <div>
+                            <img src="img/shoes.jpg" alt="">
+                        </div>
+                        <button class="btn2 w-100 "><b>ADD TO BAG</b></button>
+                        <div class="col-12 d-flex w-100" style="text-align: center;">
+                            <div class="col-12 detail_recent  " style="align-items: center;">
+                                <B>NIKE DUNK LOW </B>
+                                <div class="d-flex  " style="font-size: small;">
+                                    <P style="margin-top: 7px;">LIFESTYLE SHOES</P>
+                                    <p style="margin-top: 7px;" class=" mx-4 "><b>99.99$</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 pro-item product ">
+                        <div>
+                            <img src="img/ea41590f156f3212b79e0dfce26c7861.jpg" alt="">
+                        </div>
+                        <button class="btn2 w-100 "><b>ADD TO BAG</b></button>
+                        <div class="col-12 d-flex w-100" style="text-align: center;">
+                            <div class="col-12 detail_recent  " style="align-items: center;">
+                                <B>NIKE JORDAN </B>
+                                <div class="d-flex  " style="font-size: small;">
+                                    <P style="margin-top: 7px;">LIFESTYLE SNEAKERS</P>
+                                    <p style="margin-top: 7px;" class=" mx-3  "><b>115$</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div aria-hidden class=" col-12 d-flex ">
+                    <div class="carousel-group">
+                        <div class="col-6 pro-item product ">
+                            <div>
+                                <img src="img/red.png" alt="">
+                            </div>
+                            <button class="btn2 w-100 "><b>ADD TO BAG</b></button>
+                            <div class="col-12 d-flex w-100" style="text-align: center;">
+                                <div class="col-12 detail_recent  " style="align-items: center;">
+                                    <B>KINETIC AIR MAX</B>
+                                    <div class="d-flex  " style="font-size: small;">
+                                        <P style="margin-top: 7px;"> MEN'S RUNNING SHOES </P>
+                                        <p style="margin-top: 7px;" class=" mx-3  "><b>168$</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 pro-item product ">
+                            <div>
+                                <img src="img/green.png" alt="">
+                            </div>
+                            <button class="btn2 w-100 "><b>ADD TO BAG</b></button>
+                            <div class="col-12 d-flex w-100" style="text-align: center;">
+                                <div class="col-12 detail_recent  " style="align-items: center;">
+                                    <B>VAPORFLY 3 TECH</B>
+                                    <div class="d-flex  " style="font-size: small;">
+                                        <P style="margin-top: 7px;">ELITE ROAD RACING</P>
+                                        <p style="margin-top: 7px;" class=" mx-3  "><b>250$</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 pro-item product ">
+                            <div>
+                                <img src="img/black.png" alt="">
+                            </div>
+                            <button class="btn2 w-100 "><b>ADD TO BAG</b></button>
+                            <div class="col-12 d-flex w-100" style="text-align: center;">
+                                <div class="col-12 detail_recent  " style="align-items: center;">
+                                    <B>APEX DUNK LOW </B>
+                                    <div class="d-flex  " style="font-size: small;">
+                                        <P style="margin-top: 7px;">LIFESTYLE SNEAKERS</P>
+                                        <p style="margin-top: 7px;" class=" mx-3  "><b>115$</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 pro-item product ">
+                            <div>
+                                <img src="img/white.png" alt="">
+                            </div>
+                            <button class="btn2 w-100 "><b>ADD TO BAG</b></button>
+                            <div class="col-12 d-flex w-100" style="text-align: center;">
+                                <div class="col-12 detail_recent  " style="align-items: center;">
+                                    <B style="font-size: 22px;">CORE HERITAGE XL</B>
+                                    <div class="d-flex  " style="font-size: small;">
+                                        <P style="margin-top: 7px;font-size: smaller">EVERYDAY PERFORMANCE</P>
+                                        <p style="margin-top: 7px;" class=" mx-3  "><b>115$</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 pro-item product ">
+                            <div>
+                                <img src="img/Dunk low.png" alt="">
+                            </div>
+                            <button class="btn2 w-100 "><b>ADD TO BAG</b></button>
+                            <div class="col-12 d-flex w-100" style="text-align: center;">
+                                <div class="col-12 detail_recent  " style="align-items: center;">
+                                    <B>NIKE DUNK LOW </B>
+                                    <div class="d-flex  " style="font-size: small;">
+                                        <P style="margin-top: 7px;">LIFESTYLE SHOES</P>
+                                        <p style="margin-top: 7px;" class=" mx-4 "><b>99.99$</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 pro-item product ">
+                            <div>
+                                <img src="img/shoes.jpg" alt="">
+                            </div>
+                            <button class="btn2 w-100 "><b>ADD TO BAG</b></button>
+                            <div class="col-12 d-flex w-100" style="text-align: center;">
+                                <div class="col-12 detail_recent  " style="align-items: center;">
+                                    <B>NIKE DUNK LOW </B>
+                                    <div class="d-flex  " style="font-size: small;">
+                                        <P style="margin-top: 7px;">LIFESTYLE SHOES</P>
+                                        <p style="margin-top: 7px;" class=" mx-4 "><b>99.99$</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 pro-item product ">
+                            <div>
+                                <img src="img/ea41590f156f3212b79e0dfce26c7861.jpg" alt="">
+                            </div>
+                            <button class="btn2 w-100 "><b>ADD TO BAG</b></button>
+                            <div class="col-12 d-flex w-100" style="text-align: center;">
+                                <div class="col-12 detail_recent  " style="align-items: center;">
+                                    <B>NIKE JORDAN </B>
+                                    <div class="d-flex  " style="font-size: small;">
+                                        <P style="margin-top: 7px;">LIFESTYLE SNEAKERS</P>
+                                        <p style="margin-top: 7px;" class=" mx-3  "><b>115$</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+        <footer class="footer">
+            <div class="footer col-12">
+                <h3>About Nike</h3>
+                <p>
+                    Our Mission
+                    Sustainability
+                    Careers
+                    Investors
+                    News & Press
+                </p>
+            </div>
+            <div class="footer col-12">
+                <h3>Contact</h3>
+                <P>
+                    Customer Service: 1-800-806-6453 <br>
+                    Email: nike@support.com <br>
+                    Live Chat (Mon-Fri 9am-6pm) <br>
+                    Store Locator <br>
+                    Returns & Exchanges <br>
+                </P>
+            </div>
+            <div class="footer col-12">
+                <h3>Services</h3>
+                <P>
+                    Nike Membership
+                    Nike App
+                    Nike Training Club
+                    Nike Run Club
+                    Gift Cards
+                    Student Discount
+                </P>
+            </div>
+        </footer>
+
+        <div class="social-media-icon">
+            <a href="https://www.facebook.com/nike" target="_blank">
+                <img src="img/facebook.jpg" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/nike" target="_blank">
+                <img src="img/insta.jpg" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com/nike" target="_blank">
+                <img src="img/x.jpg" alt="Twitter">
+            </a>
+            <a href="https://www.youtube.com/nike" target="_blank">
+                <img src="img/youtube.jpg" alt="YouTube">
+            </a>
+            <a href="https://www.tiktok.com/@nike" target="_blank">
+                <img src="img/tiktok.jpg" alt="TikTok">
+            </a>
+        </div>
+</body>
+
+</html>
