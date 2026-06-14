@@ -49,7 +49,6 @@
             color: white;
             border-radius: 2px;
             text-align: center;
-            margin-left: 750px;
         }
 
         .member-info {
@@ -67,19 +66,23 @@
         }
 
         .btn_profile {
-            text-align: right;
-            margin-right: 160px;
-            padding-top: 109px;
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            padding-top: 1.5rem;
         }
 
         .btn_profile-2 {
-            text-align: left;
-            margin-left: 160px;
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
         }
 
         .carousel-project {
-            overflow-x: auto;
+            overflow: hidden;
             display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
         }
 
         .carousel-project::-webkit-scrollbar {
@@ -88,11 +91,15 @@
 
         .carousel-group {
             display: flex;
+            flex-wrap: nowrap;
+            width: max-content;
             animation: scroll 15s linear infinite;
         }
 
         .carousel-group-2 {
             display: flex;
+            flex-wrap: nowrap;
+            width: max-content;
             animation: back 14s linear infinite;
         }
 
@@ -168,7 +175,6 @@
 
         .card-web {
             position: relative;
-            margin-top: -774px;
         }
 
         .btn_profile button {
