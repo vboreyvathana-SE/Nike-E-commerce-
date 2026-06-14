@@ -701,6 +701,7 @@ footer p {
 
 .size-btn {
     width: 100%;
+    color: var(--dark);
     padding: 0.65rem 0.4rem;
     border: 1px solid #cfcfcf;
     border-radius: var(--radius);
